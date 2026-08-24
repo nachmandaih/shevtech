@@ -16,6 +16,9 @@ export function Header(): JSX.Element {
           <NavLink to="/products" className="site-nav__link">
             מוצרים
           </NavLink>
+          <NavLink to="/future-products" className="site-nav__link">
+            העתיד
+          </NavLink>
         </nav>
       </div>
     </header>

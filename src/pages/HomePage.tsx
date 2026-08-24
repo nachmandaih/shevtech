@@ -5,6 +5,7 @@ import { getPublicProducts } from '../data/products';
 import { SectionHeading } from '../components/SectionHeading';
 import { FeatureCards } from '../components/FeatureCards';
 import { StatusBadge } from '../components/StatusBadge';
+import { GuardianTeaser } from '../components/GuardianTeaser';
 
 export function HomePage(): JSX.Element {
   useEffect(() => {
@@ -99,6 +100,17 @@ export function HomePage(): JSX.Element {
           </section>
         </>
       ) : null}
+
+      <section className="section future-teaser-section">
+        <div className="container">
+          <p className="future-teaser-section__kicker">מה הלאה ב-SHEVTECH?</p>
+          <GuardianTeaser
+            compact
+            heading="SHEVTECH GUARDIAN Ecosystem"
+            subtitle="NODE • HUB • CLOUD • TECHNICIAN • CONTROL — חזון טכנולוגי מחובר סביב המוצר הקיים."
+          />
+        </div>
+      </section>
     </>
   );
 }

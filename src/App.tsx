@@ -6,6 +6,7 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ProductPage } from './pages/ProductPage';
+import { FutureProductsPage } from './pages/FutureProductsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 function ScrollToTop(): null {
@@ -29,6 +30,7 @@ export function App(): JSX.Element {
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:slug" element={<ProductPage />} />
+          <Route path="/future-products" element={<FutureProductsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
