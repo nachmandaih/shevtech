@@ -18,7 +18,7 @@ function ScrollToTop(): null {
 
 export function App(): JSX.Element {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shevtech">
       <ScrollToTop />
       <a href="#main" className="skip-link">
         דילוג לתוכן הראשי
